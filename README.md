@@ -1,12 +1,16 @@
-# DiscountCodeSystem
+Discount Code System - Developer Setup Guide
+This guide provides the essential steps to get the project running on a local development machine.
 
-1. Setup and Installation
-Follow these steps to get the project running.
+1. Prerequisites
+Visual Studio 2022 (with the .NET desktop development workload)
 
+.NET 8 SDK
+
+MySQL Server
+
+2. Setup Steps
 Step 1: Set Up the Database
-Open your MySQL management tool (e.g., MySQL Workbench).
-
-Run the following SQL script to create the discount_system database and the DiscountCodes table.
+Run the following script in your MySQL instance to create the required database and table.
 
 CREATE DATABASE IF NOT EXISTS discount_system;
 
@@ -21,11 +25,7 @@ CREATE TABLE IF NOT EXISTS DiscountCodes (
 );
 
 Step 2: Configure the Connection String
-Open the solution in Visual Studio.
-
-In the DiscountServer project, open the appsettings.json file.
-
-Modify the DefaultConnection string with your MySQL server's credentials (specifically, your password).
+In the DiscountServer project, open appsettings.json and update the connection string with your MySQL password.
 
 {
   "ConnectionStrings": {
@@ -33,26 +33,31 @@ Modify the DefaultConnection string with your MySQL server's credentials (specif
   }
 }
 
-Note: Replace your_password with your actual MySQL root password.
+Replace your_password with your MySQL root password.
 
-Step 3: Restore Dependencies and Build
-Right-click the solution in the Solution Explorer and select Restore NuGet Packages.
+Step 3: Build the Solution
+Open the DiscountCodeSystem.sln file in Visual Studio.
 
-Once the packages are restored, right-click the solution again and select Build Solution.
+Right-click the solution and select Restore NuGet Packages.
 
-6. How to Run the Application
-The server and the client must be run at the same time.
+Right-click the solution again and select Build Solution.
 
+3. How to Run
 In the Solution Explorer, right-click the Solution 'DiscountCodeSystem'.
 
 Select Set Startup Projects....
 
-Choose the Multiple startup projects option.
+Choose Multiple startup projects.
 
 Set the "Action" for both DiscountServer and DiscountClient to Start.
 
 Click OK.
 
-Press F5 or click the green "Start" button.
+Press F5 to launch both the server and the WPF client.
 
-Two windows will launch: the server's console window and the WPF client application. The client will automatically connect to the server, and you can begin generating and using codes.
+4. Project Structure
+The solution contains two projects that need to be run:
+
+DiscountServer: The backend console application that runs the WebSocket server.
+
+DiscountClient: The WPF desktop application that provides the graphical user interface.
