@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountServer", "DiscountServer\DiscountServer.csproj", "{50EC8471-D89C-4E4D-B939-A9AD36CD5A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountClient", "DiscountClient\DiscountClient.csproj", "{3A259C7D-3640-4252-AA86-63A9A2CA8A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50EC8471-D89C-4E4D-B939-A9AD36CD5A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50EC8471-D89C-4E4D-B939-A9AD36CD5A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50EC8471-D89C-4E4D-B939-A9AD36CD5A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50EC8471-D89C-4E4D-B939-A9AD36CD5A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A259C7D-3640-4252-AA86-63A9A2CA8A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A259C7D-3640-4252-AA86-63A9A2CA8A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A259C7D-3640-4252-AA86-63A9A2CA8A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A259C7D-3640-4252-AA86-63A9A2CA8A98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FFA2464-9FEA-411C-8958-C555C30764BF}
+	EndGlobalSection
+EndGlobal
